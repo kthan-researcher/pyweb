@@ -55,5 +55,4 @@ def teardown_request(exception):
 def teardown_context(exception):
     print(">>> teardown context!!", exception)
     db_session.remove()   # remove used db-session
-
-
+    
